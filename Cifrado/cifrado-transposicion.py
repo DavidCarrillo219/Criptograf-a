@@ -28,7 +28,7 @@ def salida (criptograma):
     texto = ''
     for i in range(len(criptograma)):
         if (i+1) % BLOQUE != 0:
-            texto += criptograma[1]
+            texto += criptograma[i]
         else:
             texto += criptograma[i]+' '
     return texto

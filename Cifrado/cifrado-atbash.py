@@ -3,8 +3,8 @@ import pyperclip
 
 # Alfabetos empleados
 
-claro = "abcdefghijklmnñopqrstuvwxyz"
-cifrado = "ZYXWVUTSRQPONMLKJIHGFEDCBA"
+claro =   "abcdefghijklmnñopqrstuvwxyz"
+cifrado = "ZYXWVUTSRQPOÑNMLKJIHGFEDCBA"
 
 # Almacena la forma cifrado/descifrado del texto
 salida = ''
@@ -20,6 +20,8 @@ for simbolo in texto.lower():
         indice = claro.index(simbolo)
         # Añade un nuevo simbolo al texto cifrado/descifrado
         salida += cifrado[indice]
+
+
 
 
 # Imprime en pantalla el resultado

@@ -23,9 +23,9 @@ for simbolo in texto.upper():
         pos = ALFABETO.find(simbolo)
         # Ejecuta la operación de cifrado/descifrado
         if modo == 'c':
-            pos = (pos + clave) % 26
+            pos = (pos + clave) % len(ALFABETO)
         elif modo == 'd':
-            pos = (pos - clave) % 26
+            pos = (pos - clave) % len(ALFABETO)
         
         # Añade el nuevo símbolo a la cadena
         salida += ALFABETO[pos]
